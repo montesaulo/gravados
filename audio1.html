@@ -1,0 +1,833 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Cabeçalho Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Rodapé Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.CabealhoChar
+	{mso-style-name:"Cabeçalho Char";
+	mso-style-link:Cabeçalho;}
+span.RodapChar
+	{mso-style-name:"Rodapé Char";
+	mso-style-link:Rodapé;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=PT-BR>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;!DOCTYPE html&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;html&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;head&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;title&gt;Áudio&lt;/title&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://cdn.plyr.io/3.6.7/plyr.css&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;style&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    @import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    body {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      height: 100vh;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      overflow: hidden;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin: 0px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }    </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .audio-container {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      display: flex;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      align-items: center;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      justify-content: space-between;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      font-family: 'Open Sans', sans-serif;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      justify-content: flex-start;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      cursor: pointer; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      width: 100px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .audio-container img {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      width: 50px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      height: 50px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      border-radius: 50%;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      object-fit: cover;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      padding-right: 8px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      padding-left: 10px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .audio-container .microphone-icon {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      position: relative;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-left: -67px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-bottom: -25px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      font-size: 22px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color: #4ad954;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .audio-container .microphone-icon.blue {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color: #3db8ee;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__control.plyr__tab-focus,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__control:hover,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__control[aria-expanded=false]
+{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background: rgba(0, 0, 0, 0);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background:
+var(--plyr-audio-control-background-hover, var(--plyr-color-main,
+var(--plyr-color-main, rgba(0, 0, 0, 0))));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color: rgba(0, 0, 0, 0);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color: var(--plyr-audio-control-color-hover,
+#797979)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__controls {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background: rgba(0, 0, 0, 0);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background:
+var(--plyr-audio-controls-background, rgba(0, 0, 0, 0));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      border-radius: inherit;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color: #4a5464;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      color:
+var(--plyr-audio-control-color,#4a5464);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-left: 0px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      padding: 0px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__control--overlaid
+.plyr__control__icon {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      font-size: 33px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--full-ui
+input[type=range]::-webkit-slider-thumb {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      -webkit-appearance: none;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      border: 0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      border-radius: 100%;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      box-shadow: 0 1px 1px rgba(35,40,47,.15),0 0 0
+1px rgba(35,40,47,.2);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      box-shadow: var(--plyr-range-thumb-shadow,0
+1px 1px rgba(35,40,47,.15),0 0 0 1px rgba(35,40,47,.2));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      height: 13px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      height: var(--plyr-range-thumb-height,13px);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-top: -4px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-top:
+calc(var(--plyr-range-thumb-height,13px)/2*-1 -
+var(--plyr-range-track-height,5px)/2*-1);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      position: relative;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      -webkit-transition: all .2s ease;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      transition: all .2s ease;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      width: 13px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      width: var(--plyr-range-thumb-height,13px);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background: var(--range-thumb-background,
+#4ad954);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--full-ui
+input[type=range].blue::-webkit-slider-thumb {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      background:
+var(--range-thumb-background-active, #3db8ee);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .hide {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      display: none;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr__controls .plyr__controls__item.plyr__progress__container:first-child,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr__controls
+.plyr__controls__item.plyr__time+.plyr__time,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr__controls
+.plyr__controls__item.plyr__time:first-child {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      padding-left: 0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      display: block;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-left: 7.5px;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr__time+.plyr__time:before {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      content: &quot;&quot;;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      margin-right: var(--plyr-control-spacing);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__controls
+.plyr__controls__item.plyr__time--current.hide,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    .plyr--audio .plyr__controls
+.plyr__controls__item.plyr__time--duration.hide {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      display: none;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    }</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;/style&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;body&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;div class=&quot;audio-container&quot;
+id=&quot;audioContainer&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    </span><span style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;!-- Cole o link do Seu áudio Abaixo--&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    &lt;audio class=&quot;plyr&quot; src=&quot;https://s3.fr-par.scw.cloud/typebot/public/typebots/mfe5x70lhw3c9ikxb8mk2v9e/blocks/v9s8vukt5n710giu8tmpz01i?v=1689972532338&quot;&gt;&lt;/audio&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    </span><span style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;!-- Cole o link da Sua imagem Abaixo--&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>    </span><span lang=DE style='font-size:10.5pt;font-family:"Courier New";
+color:black'>&lt;img src=&quot;https://i.imgur.com/cknxSJf.png&quot;
+alt=&quot;Imagem&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=DE style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    </span><span lang=EN-US style='font-size:10.5pt;
+font-family:"Courier New";color:black'>&lt;div
+class=&quot;microphone-icon&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      &lt;i class=&quot;fas
+fa-microphone&quot;&gt;&lt;/i&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    &lt;/div&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;/div&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;script
+src=&quot;https://cdn.plyr.io/3.6.7/plyr.js&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;script&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    document.addEventListener('DOMContentLoaded',
+function() {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const player = new Plyr('.plyr', {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        controls: ['play', 'progress',
+'current-time', 'duration']</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const audioElement =
+document.querySelector('.plyr');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const currentTimeElement =
+document.querySelector('.plyr__time--current');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const durationElement =
+document.querySelector('.plyr__time--duration');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      </span><span style='font-size:10.5pt;
+font-family:"Courier New";color:black'>const microphoneIcon =
+document.querySelector('.microphone-icon');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>      currentTimeElement.classList.add('hide'); // Adiciona a
+classe 'hide' ao iniciar</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>      </span><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>audioElement.addEventListener('play', function() {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        currentTimeElement.classList.remove('hide');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        </span><span style='font-size:10.5pt;
+font-family:"Courier New";color:black'>durationElement.classList.add('hide');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>        microphoneIcon.classList.add('blue'); // Adiciona a classe
+'blue' para alterar a cor do ícone</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>        audioElement.classList.add('blue'); // Adiciona a classe
+'blue' para alterar o background do controle deslizante</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>        </span><span lang=EN-US style='font-size:10.5pt;
+font-family:"Courier New";color:black'>audioElement.style.setProperty('--range-thumb-background',
+'#3db8ee');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      audioElement.addEventListener('pause',
+function() {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        currentTimeElement.classList.add('hide');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        </span><span style='font-size:10.5pt;
+font-family:"Courier New";color:black'>durationElement.classList.remove('hide');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const audioContainer =
+document.getElementById('audioContainer');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      audioContainer.addEventListener('click',
+function() {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        const playButton =
+audioContainer.querySelector('.plyr__controls
+button[data-plyr=&quot;play&quot;]');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        playButton.click();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      const playPauseButton =
+document.getElementById('audioContainer').querySelector('.plyr__controls
+button[data-plyr=&quot;play&quot;]');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      </span><span style='font-size:10.5pt;
+font-family:"Courier New";color:black'>const audioBox =
+document.querySelector('.audio-box');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span style='font-size:10.5pt;font-family:"Courier New";
+color:black'>      </span><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>playPauseButton.addEventListener('click', function()
+{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        const playButton =
+audioContainer.querySelector('.plyr__controls
+button[data-plyr=&quot;play&quot;]');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        playButton.click();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      audioBox.addEventListener('click',
+function(event) {</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        event.stopPropagation(); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        const playButton =
+audioContainer.querySelector('.plyr__controls button[data-plyr=&quot;play&quot;]');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>        playButton.click();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>      });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>    });</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>  &lt;/script&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'><span lang=EN-US style='font-size:10.5pt;font-family:
+"Courier New";color:black'>&lt;/html&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
